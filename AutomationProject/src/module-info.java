@@ -5,7 +5,7 @@ import org.testng.annotations.Test;
 public class Signin {
 	static {
 		 System.setProperty("webdriver.chrome.driver",
-	                "C:\\Users\\sahana.v\\Documents\\chromedriver_win32\\chromedriver.exe");
+	                "C:\\Users\\anil.boyapati\\Documents\\chromedriver_win32\\chromedriver.exe");
 	  
     WebDriver driver;
     @Test(priority = 1)
@@ -17,12 +17,12 @@ public class Signin {
     	 driver.findElement(By.className("my-2")).click();
     	 @Test(priority = 2)
     	    public void enterUserName() throws InterruptedException {
-    		  driver.findElement(By.id("username")).sendKeys("Sahana");
+    		  driver.findElement(By.id("username")).sendKeys("Anil");
     	    }
 
     	 @Test(priority = 3)
     	    public void enterPassword() throws InterruptedException {
-    	        driver.findElement(By.id("password")).sendKeys("sa@123");
+    	        driver.findElement(By.id("password")).sendKeys("anil@123");
     	        Thread.sleep(3000);
     }
          
